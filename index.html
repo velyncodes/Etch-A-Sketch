@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Etch-A-Sketch</h1>
+    <div class="wrapperContainer">
+      <div class="settings">
+        <button id="blackBtn">Black</button>
+        <button id="colorfulBtn">Colorful mode</button>
+        <button id="eraserBtn">Eraser</button>
+        <button id="resetBtn">Reset</button>
+        <div id="sizeSketchpad">16 x 16</div>
+        <input id="sizeSlider" type="range" value="16" min="1" max="64" />
+      </div>
+      <div id="grid" class="grid"></div>
+    </div>
+    <footer>
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Vienna O.
+      </p>
+      <a href="http://github.com/viennao"
+        ><img class="gh" src="gh_logo.png" alt=""
+      /></a>
+    </footer>
+  </body>
+</html>
